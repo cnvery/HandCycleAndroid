@@ -1,1 +1,27 @@
-# HandCycleAndroid
+# Project Title
+
+Hand Cycle Android
+
+## Getting Started
+
+This is a mobile app developed for project name "[Development of low cost upper and lower extremities rehabilitation system with interactive feedback for children with movement disorders](https://ieeexplore.ieee.org/document/7843556/)", which capable of communicating with Firebase host and Arduino board via Bluetooth communication.
+
+## Deployment
+
+Tested on Android 4.X tablet.
+
+## Built With
+
+* [Android Studio 2.1.2](https://developer.android.com/studio/) 
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Authors
+
+* **Jerry Chong** - [jerrychong25](https://github.com/jerrychong25)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
