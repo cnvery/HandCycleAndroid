@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This is a mobile app developed for project name "[Development of low cost upper and lower extremities rehabilitation system with interactive feedback for children with movement disorders](https://ieeexplore.ieee.org/document/7843556/)", which capable of communicating with Firebase host and Arduino board via Bluetooth communication.
+This is a mobile app developed for project name "[Development of low cost upper and lower extremities rehabilitation system with interactive feedback for children with movement disorders](https://ieeexplore.ieee.org/document/7843556/)", which capable of communicating with [Firebase](https://firebase.google.com/) host and [Arduino](https://www.arduino.cc/) board via Bluetooth communication. This project is developed altogether with a website (Repository: [HandCycleWeb](https://github.com/jerrychong25/HandCycleWeb)).
 
 ## Deployment
 
@@ -23,4 +23,4 @@ Tested on Android 4.X tablet.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
