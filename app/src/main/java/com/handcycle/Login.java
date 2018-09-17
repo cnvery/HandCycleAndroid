@@ -1,4 +1,3 @@
-// Online Source Code 2
 package com.handcycle;
 
 // Import Android API
@@ -15,8 +14,6 @@ import android.text.TextUtils;
 //import com.android.volley.Response;
 //import com.android.volley.toolbox.Volley;
 
-// Import Android API 2
-
 // Import Firebase API
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,10 +23,6 @@ import com.google.firebase.database.DatabaseReference;
 // Import Firebase API 2
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-//import com.google.firebase.auth.AuthResult;
-
-// Import Java API
-
 
 public class Login extends AppCompatActivity {
 
