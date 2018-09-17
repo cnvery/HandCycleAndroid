@@ -23,7 +23,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 // Import Firebase API
-import com.google.android.gms.auth.api.Auth;
+//import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -92,17 +92,12 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
 
     // Youtube
     public static final String api_key = "AIzaSyCnAQhYgNJr64s2IvVrLGX72pClRN7smF0";
-//    public static final String video_id = "T5-8rkMVdCs";             // Mr Bean Cartoon
-//    public static final String video_id = "k8_xSG2saCk";             // Pokemon Origins
-    public static final String video_id = "MgRgiHyVGgw";           // Doraemon
+    public static final String video_id = "2KfvxE7iQO8";           // Doraemon
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
-//        Firebase.setAndroidContext(this);
-
-//        final Firebase myFirebaseRef = new Firebase("https://telemedicine-42de1.firebaseio.com/");
 
         DatabaseRehabilitationDetails = FirebaseDatabase.getInstance().getReference();
 
@@ -121,7 +116,6 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
                 for(DataSnapshot child: dataSnapshot.getChildren()){
                     UserPushID = child.getKey();
                     Log.d("Key", UserPushID);
-//                Log.d("Key2", DataPushID);
                 }
             }
 
@@ -192,8 +186,6 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
 
         if (!wasRestored) {
             youTubePlayer.cueVideo(video_id);
-//            youTubePlayer.cueVideo(video_id2);
-//            youTubePlayer.cueVideo(video_id3);
         }
 
     }
@@ -638,6 +630,7 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         }
         return  device.createRfcommSocketToServiceRecord(MY_UUID);
     }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -692,6 +685,7 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         mConnectedThread = new ConnectedThread(btSocket);
         mConnectedThread.start();
     }
+
     @Override
     public void onPause() {
         super.onPause();
@@ -711,6 +705,7 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             errorExit("Fatal Error", "In onPause() and failed to close socket." + e2.getMessage() + ".");
         }
     }
+
     private void checkBTState() {
         // Check for Bluetooth support and then check to make sure it is turned on
         // Emulator doesn't support Bluetooth and will return null
@@ -729,6 +724,7 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             }
         }
     }
+
     private void errorExit(String title, String message){
         Toast.makeText(getBaseContext(), title + " - " + message, Toast.LENGTH_SHORT).show();
         finish();
@@ -750,12 +746,10 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         }
     }
     private class ConnectedThread extends Thread {
-        //        private final BluetoothSocket mmSocket;
         private final InputStream mmInStream;
         private final OutputStream mmOutStream;
 
         public ConnectedThread(BluetoothSocket socket) {
-//            mmSocket = socket;
             InputStream tmpIn = null;
             OutputStream tmpOut = null;
 
