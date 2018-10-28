@@ -151,7 +151,6 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
     @Override
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
         Toast.makeText(this, "Fail to Initialize!", Toast.LENGTH_LONG).show();
-
     }
 
     private YouTubePlayer.PlaybackEventListener playbackEventListener = new YouTubePlayer.PlaybackEventListener() {
